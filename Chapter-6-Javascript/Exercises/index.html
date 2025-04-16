@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petrol Cost Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main calculator container -->
+    <div class="calculator">
+      <!-- Calculator title -->
+      <h1>Petrol Cost Calculator</h1>
+
+      <!-- Input for cost per liter -->
+      <div class="input-group">
+        <label for="cost-per-liter">Cost per liter (in dollars)</label>
+        <div class="currency">
+          <input
+            type="number"
+            id="cost-per-liter"
+            step="0.01"
+            min="0"
+            value="1.72"
+          />
+        </div>
+      </div>
+
+      <!-- Input for liters purchased -->
+      <div class="input-group">
+        <label for="liters">Liters purchased</label>
+        <input type="number" id="liters" step="0.1" min="0" value="0" />
+      </div>
+
+      <!-- Calculate button -->
+      <button id="calculate-btn">Calculate Total Cost</button>
+
+      <!-- Result display area -->
+      <p id="result"></p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="java.js"></script>
+  </body>
+</html>
